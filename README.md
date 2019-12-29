@@ -82,7 +82,7 @@ Stopgain.: Distância em pontos que deve ser protegido
 ![breakeven](https://user-images.githubusercontent.com/2820984/71563199-550c7080-2a6a-11ea-85c5-3a303b0d3053.jpg)
 
 #### Horários
-Existem 3 configuração de horário. 1-horário para iniciar os trades, procurar por operações, 2-horário para encerrar procura de trades e 3-horário de encerramento das posições ou ordens pendentes que foram abertas
+Existem 3 configurações de horários. 1-horário para iniciar os trades, procurar por operações, 2-horário para encerrar procura de trades e 3-horário de encerramento das posições e/ou ordens pendentes abertas
 
 SetHoursLimits("09:05", "17:00", "17:30");
 
