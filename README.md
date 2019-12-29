@@ -26,6 +26,11 @@ Até o momento, 29/12/2019, foi criado para abrir/gerenciar apenas uma posição
 
 \Include\ManagerRisk.mqh: Classe base com métodos virtuais para serem sobrescritos por novas classes de Risco. Toda classe com nova lógica de risco deve herdar desta.
 
+## Exemplo: Posição aberta
+Exemplo de posição aberta de venda, Stop Loss posicionado e as 3 ordens para aumento de posição também posicionadas
+
+![venda-incremento](https://user-images.githubusercontent.com/2820984/71563115-1fb35300-2a69-11ea-9172-ce7f33015ae6.jpg)
+
 ## Recursos Padrões
 
 #### Aumento de Posição/Entrada Parcial
@@ -42,6 +47,8 @@ Lote.: Tamanho do lote do aumento
 
 Level.: A distância em pontos a partir do preço da posição aberta
 
+![aumento-posicao](https://user-images.githubusercontent.com/2820984/71563201-5e95d880-2a6a-11ea-9e5a-9525f7bea868.jpg)
+
 #### Saídas Parciais
 Por padrão é possível fazer até 3 saídas parciais
 
@@ -56,6 +63,8 @@ Lote.: Tamanho do lote da parcial
 
 Level.: A distância em pontos a partir do preço da posição aberta
 
+![saidas-parciais](https://user-images.githubusercontent.com/2820984/71563195-48881800-2a6a-11ea-80fa-cf2e9a3fa1a7.jpg)
+
 #### Break Even
 Por padrão é possível fazer até 3 break even
 
@@ -69,6 +78,8 @@ Por padrão é possível fazer até 3 break even
 Level.: A distância em pontos a partir do preço da posição aberta
 
 Stopgain.: Distância em pontos que deve ser protegido
+
+![breakeven](https://user-images.githubusercontent.com/2820984/71563199-550c7080-2a6a-11ea-85c5-3a303b0d3053.jpg)
 
 #### Horários
 Existem 3 configuração de horário. 1-horário para iniciar os trades, procurar por operações, 2-horário para encerrar procura de trades e 3-horário de encerramento das posições ou ordens pendentes que foram abertas
