@@ -15,9 +15,16 @@ Para codificar usei ***Assistente MQL5*** como base, não quis reinventar a roda
 ### Conta HEDGE e NET
 Até o momento, 29/12/2019, foi criado para abrir/gerenciar apenas uma posição por vez
 
-## Exemplos
+## Principais Classes
+- Tudo gira em torno dessas 4 classes
 
-Para exemplificar a implementação e uso da estrutura e dos principais recursos, foi feito uma codificação para o setup ***Dunnigan***
+\Include\ManagerExpert.mqh: Responsável por executar e gerenciar trade
+
+\Include\ManagerTrailing.mqh: Classe base com métodos virtuais para serem sobrescritos por novas classes de Trailing Stop. Toda classe com uma nova lógica de trailing stop deve herdar desta.
+
+\Include\ManagerSignal.mqh: Classe base com métodos virtuais para serem sobrescritos por novas classes de Sinais. Toda classe com nova lógica de sinal deve herdar desta.
+
+\Include\ManagerRisk.mqh: Classe base com métodos virtuais para serem sobrescritos por novas classes de Risco. Toda classe com nova lógica de risco deve herdar desta.
 
 ## Recursos Padrões
 
@@ -33,7 +40,7 @@ Por padrão é possível fazer até 3 aumento de posição
 
 Lote.: Tamanho do lote do aumento
 
-Level.: A distância em pontos com base no preço da posição aberta
+Level.: A distância em pontos a partir do preço da posição aberta
 
 #### Saídas Parciais
 Por padrão é possível fazer até 3 saídas parciais
@@ -47,7 +54,7 @@ Por padrão é possível fazer até 3 saídas parciais
 
 Lote.: Tamanho do lote da parcial
 
-Level.: A distância em pontos com base no preço da posição aberta
+Level.: A distância em pontos a partir do preço da posição aberta
 
 #### Break Even
 Por padrão é possível fazer até 3 break even
@@ -59,7 +66,7 @@ Por padrão é possível fazer até 3 break even
   <li> SetBreakEven3(level, stopgain)</li>
 </ul>      
 
-Level.: A distância em pontos com base no preço da posição aberta
+Level.: A distância em pontos a partir do preço da posição aberta
 
 Stopgain.: Distância em pontos que deve ser protegido
 
@@ -70,3 +77,7 @@ SetHoursLimits("09:05", "17:00", "17:30");
 
 #### Reversão de Posição
 Por padrão é feito procura de entradas contrárias da posição aberta. Por exemplo, em posição aberta de compra o gerenciador estará procurando entradas em vendas. Para desabilitar, é possível fazer de duas formas. Setando False na função ***SetIsReserve*** da classe de base ManagerSignal. Ou reescrever as funções virtual CheckReverseSell e CheckReverseBuy retornando False ou adicionando a lógica correta para fazer a reversão.
+
+## Considerações finais
+- Em \Robot foi criado um exemplo usando os principais recursos na implementação setup ***Dunnigan***
+- Apesar de ter usado o ***Assistente MQL5*** como base, após  ter codificado tudo isso aprendi muito sobre a linguagem MQL5, até então não dominava muito bem.
