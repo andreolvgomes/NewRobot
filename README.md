@@ -7,7 +7,7 @@ de algum tempo surgiu mais necessidades, como: aumento de posição, saídas par
 Cansado de sofrer com isso, comecei pesquisar sobre estruturas prontas que oferecessem uma forma fácil e padrão dos principais recursos de 
 entrada e saída de um trade, então e me deparei como o ***"Assistente MQL5"*** que facilitava a implementação
 de estratégias. Tentei usar, pesquisei sobre, no entanto, achei muito complicado e também não consegui nem encontrei formas e adicionar os
-recursos que mais utilizava. Então, a partir do Assistente MQL5 comecei a criar minha própria estrutura com os recursos que mais usava.
+recursos que mais utilizava. Então, a partir do Assistente MQL5 comecei a me aprofundar mais na linguagem, aprender mais sobre e criar minha própria estrutura com os recursos que mais usava.
 
 ## Exemplos
 
