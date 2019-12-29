@@ -87,7 +87,7 @@ Existem 3 configurações de horários. 1-horário para iniciar os trades, procu
 SetHoursLimits("09:05", "17:00", "17:30");
 
 #### Reversão de Posição
-Por padrão é feito procura de entradas contrárias da posição aberta. Por exemplo, em posição aberta de compra o gerenciador estará procurando entradas em vendas. Para desabilitar, é possível fazer de duas formas. Setando False na função ***SetIsReserve*** da classe de base ManagerSignal. Ou reescrever as funções virtual CheckReverseSell e CheckReverseBuy retornando False ou adicionando a lógica correta para fazer a reversão.
+Por padrão é feito procura de entradas contrárias da posição aberta. Por exemplo, em posição aberta de compra o gerenciador estará procurando por vendas. Para desabilitar, é possível fazer de duas formas, setando False na função ***SetIsReserve*** da classe de base ManagerSignal. Ou reescrever as funções virtual CheckReverseSell e CheckReverseBuy retornando False ou adicionando a lógica correta para fazer a reversão.
 
 ## Considerações finais
 - Em \Robot foi criado um exemplo usando os principais recursos na implementação setup ***Dunnigan***
