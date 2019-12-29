@@ -11,7 +11,7 @@ recursos que mais utilizava. Então, a partir do Assistente MQL5 comecei a criar
 
 ## Exemplos
 
-Para exemplificar a implementação e uso da estrutura e dos principais recursos, foi desenvolvido o setup ***Dunnigan***
+Para exemplificar a implementação e uso da estrutura e dos principais recursos, foi feito uma codificação para o setup ***Dunnigan***
 
 ## Recursos Padrões
 
