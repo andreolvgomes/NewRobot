@@ -43,7 +43,7 @@ Por padrão é possível fazer até 3 saídas parciais
   <li> SetOutputPartial1(lote, level)</li>
   <li> SetOutputPartial2(lote, level)</li>
   <li> SetOutputPartial3(lote, level)</li>
-</ul>      
+</ul>
 
 Lote.: Tamanho do lote da parcial
 
