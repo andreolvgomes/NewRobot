@@ -9,6 +9,12 @@ entrada e saída de um trade, então e me deparei como o ***"Assistente MQL5"***
 de estratégias. Tentei usar, pesquisei sobre, no entanto, achei muito complicado e também não consegui nem encontrei formas e adicionar os
 recursos que mais utilizava. Então, a partir do Assistente MQL5 comecei a me aprofundar mais na linguagem, aprender mais sobre e criar minha própria estrutura com os recursos que mais usava.
 
+***Observação:***
+Para codificar usei ***Assistente MQL5*** como base, não quis reinventar a roda em alguns aspectos, apenas criar algo que eu tivesse 100% de controle, aprender mais sobre codificação na linguagem e desenvolver recursos que fossem atender minhas necessidades.
+
+### Conta HEDGE e NET
+Até o momento, 29/12/2019, foi criado para abrir/gerenciar apenas uma posição por vez
+
 ## Exemplos
 
 Para exemplificar a implementação e uso da estrutura e dos principais recursos, foi feito uma codificação para o setup ***Dunnigan***
