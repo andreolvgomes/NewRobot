@@ -9,11 +9,21 @@ entrada e saída de um trade, então e me deparei como o ***"Assistente MQL5"***
 de estratégias. Tentei usar, pesquisei sobre, no entanto, achei muito complicado e também não consegui nem encontrei formas e adicionar os
 recursos que mais utilizava. Então, a partir do Assistente MQL5 comecei a criar minha própria estrutura com os recursos que mais usava.
 
+## Exemplos
+
+Para exemplificar a implementação e uso da estrutura e dos principais recursos, foi desenvolvido o setup ***Dunnigan***
+
 ## Recursos Padrões
 
 #### Aumento de Posição/Entrada Parcial
+Pendente, escrevendo ....
 #### Saídas Parciais
+Pendente, escrevendo ....
 #### Break Even
+Pendente, escrevendo ....
 #### Horários
+Pendente, escrevendo ....
 #### Reversão de Posição
+Pendente, escrevendo ....
 #### Tempo limite para expirar ordens pendentes
+Pendente, escrevendo ....
