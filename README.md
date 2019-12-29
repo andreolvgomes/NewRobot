@@ -22,14 +22,51 @@ Para exemplificar a implementação e uso da estrutura e dos principais recursos
 ## Recursos Padrões
 
 #### Aumento de Posição/Entrada Parcial
-Pendente, escrevendo ....
+Por padrão é possível fazer até 3 aumento de posição
+
+-ManagerExpert
+<ul>
+  <li> SetInputPartial1(lote, level)</li>
+  <li> SetInputPartial2(lote, level)</li>
+  <li> SetInputPartial3(lote, level)</li>
+</ul>      
+
+Lote.: Tamanho do lote do aumento
+
+Level.: A distância em pontos com base no preço da posição aberta
+
 #### Saídas Parciais
-Pendente, escrevendo ....
+Por padrão é possível fazer até 3 saídas parciais
+
+-ManagerExpert
+<ul>
+  <li> SetOutputPartial1(lote, level)</li>
+  <li> SetOutputPartial2(lote, level)</li>
+  <li> SetOutputPartial3(lote, level)</li>
+</ul>      
+
+Lote.: Tamanho do lote da parcial
+
+Level.: A distância em pontos com base no preço da posição aberta
+
 #### Break Even
-Pendente, escrevendo ....
+Por padrão é possível fazer até 3 break even
+
+-ManagerExpert
+<ul>
+  <li> SetBreakEven1(level, stopgain)</li>
+  <li> SetBreakEven2(level, stopgain)</li>
+  <li> SetBreakEven3(level, stopgain)</li>
+</ul>      
+
+Level.: A distância em pontos com base no preço da posição aberta
+
+Stopgain.: Distância em pontos que deve ser protegido
+
 #### Horários
-Pendente, escrevendo ....
+Existem 3 configuração de horário. 1-horário para iniciar os trades, procurar por operações, 2-horário para encerrar procura de trades e 3-horário de encerramento das posições ou ordens pendentes que foram abertas
+
+SetHoursLimits("09:05", "17:00", "17:30");
+
 #### Reversão de Posição
-Pendente, escrevendo ....
-#### Tempo limite para expirar ordens pendentes
-Pendente, escrevendo ....
+Por padrão é feito procura de entradas contrárias da posição aberta. Por exemplo, em posição aberta de compra o gerenciador estará procurando entradas em vendas. Para desabilitar, é possível fazer de duas formas. Setando False na função ***SetIsReserve*** da classe de base ManagerSignal. Ou reescrever as funções virtual CheckReverseSell e CheckReverseBuy retornando False ou adicionando a lógica correta para fazer a reversão.
