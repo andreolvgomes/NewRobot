@@ -10,10 +10,12 @@ de estratégias. Tentei usar, pesquisei sobre, no entanto, achei muito complicad
 recursos que mais utilizava. Então, a partir do Assistente MQL5 comecei a me aprofundar mais na linguagem, aprender mais sobre e criar minha própria estrutura com os recursos que mais usava.
 
 ***Observação:***
-Para codificar usei ***Assistente MQL5*** como base, não quis reinventar a roda em alguns aspectos, apenas criar algo que eu tivesse 100% de controle, aprender mais sobre codificação na linguagem e desenvolver recursos que fossem atender minhas necessidades.
+- Só funciona no ativo ***Mini Índice Bovespa***
+
+- Para codificar usei ***Assistente MQL5*** como base, não quis reinventar a roda em alguns aspectos, apenas criar algo que eu tivesse 100% de controle, aprender mais sobre codificação na linguagem e desenvolver recursos que fossem atender minhas necessidades.
 
 ### Conta HEDGE e NET
-Até o momento, 29/12/2019, foi criado para abrir/gerenciar apenas uma posição por vez
+Foi criado para abrir/gerenciar apenas uma posição por vez
 
 ## Principais Classes
 - Tudo gira em torno dessas 4 classes
@@ -92,3 +94,4 @@ Por padrão é feito procura de entradas contrárias da posição aberta. Por ex
 ## Considerações finais
 - Em \Robot foi criado um exemplo usando os principais recursos na implementação setup ***Dunnigan***
 - Apesar de ter usado o ***Assistente MQL5*** como base, após  ter codificado tudo isso aprendi muito sobre a linguagem MQL5, até então não dominava muito bem.
+- Só funciona no ativo ***Mini Índice Bovespa***
