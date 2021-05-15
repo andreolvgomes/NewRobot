@@ -7,7 +7,7 @@
 #property link      "https://www.mql5.com"
 #property version   "1.00"
 
-#include <..\Experts\NewRobot\Include\ManagerRisk.mqh>
+#include <NewRobot\ManagerRisk.mqh>
 
 class RiskNone : public ManagerRisk
   {
