@@ -13,16 +13,22 @@ de algum tempo surgiu mais necessidades, como: aumento de posição, saídas par
 ### Conta HEDGE e NET
 Foi criado para abrir/gerenciar apenas uma posição por vez
 
+## Configuração/Organização das Pastas
+1. Deve mover o diretório "NewRobot" para "\MQL5\Include"
+2. Deve mover o diretório "Bot" para "\MQL5\Experts", ou então, manter apenas os arquivos .mq5 soltos em "\Experts"
+
+Feito isso, pronto!!!
+
 ## Principais Classes
 - Tudo gira em torno dessas 4 classes
 
-\Include\ManagerExpert.mqh: Responsável por executar e gerenciar trade
+\NewRobot\ManagerExpert.mqh: Responsável por executar e gerenciar trade
 
-\Include\ManagerTrailing.mqh: Classe base com métodos virtuais para serem sobrescritos por novas classes de Trailing Stop. Toda classe com uma nova lógica de trailing stop deve herdar desta.
+\NewRobot\ManagerTrailing.mqh: Classe base com métodos virtuais para serem sobrescritos por novas classes de Trailing Stop. Toda classe com uma nova lógica de trailing stop deve herdar desta.
 
-\Include\ManagerSignal.mqh: Classe base com métodos virtuais para serem sobrescritos por novas classes de Sinais. Toda classe com nova lógica de sinal deve herdar desta.
+\NewRobot\ManagerSignal.mqh: Classe base com métodos virtuais para serem sobrescritos por novas classes de Sinais. Toda classe com nova lógica de sinal deve herdar desta.
 
-\Include\ManagerRisk.mqh: Classe base com métodos virtuais para serem sobrescritos por novas classes de Risco. Toda classe com nova lógica de risco deve herdar desta.
+\NewRobot\ManagerRisk.mqh: Classe base com métodos virtuais para serem sobrescritos por novas classes de Risco. Toda classe com nova lógica de risco deve herdar desta.
 
 ## Exemplo: Posição aberta
 Exemplo de posição aberta de venda, Stop Loss posicionado e as 3 ordens para aumento de posição também posicionadas
